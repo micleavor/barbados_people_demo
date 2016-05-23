@@ -1,0 +1,16 @@
+<ion-view view-title="People">
+  <ion-content>
+
+    
+    
+    <ion-list>
+      <ion-item ng-repeat="p in my_peoples" href="#/app/person/{{p.$id}}">
+        {{p.name}} #{{p.number}}
+      </ion-item>
+    </ion-list>
+
+
+    <div id="floating-button" class="button button-balanced" ng-click="addPerson()"><a>+</a></div>
+    
+  </ion-content>
+</ion-view>
